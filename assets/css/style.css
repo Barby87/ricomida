@@ -1,0 +1,127 @@
+:root {
+    --black: #000;
+    --dark: #373a3C;
+    --grey: #777777;
+    --light: #dddddd;
+    --white: #fff;
+    --danger: #dc3545;
+}
+
+
+/* Tipo de fuente*/
+
+body {
+    font-family: 'Cabin', sans-serif;
+    color: var(--dark);
+}
+
+
+/* Estilo de navbar y footer*/
+
+nav {
+    padding: 0!important;
+}
+
+.navbar,
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'Lobster', cursive;
+    text-decoration: none!important;
+}
+
+.nav-link {
+    font-family: 'Cabin', regular;
+    color: var(--white);
+}
+
+
+/*Tamaño de fuente ícono Ricomida*/
+
+.icon {
+    font-size: 37px;
+    padding: 0;
+}
+
+
+/*Color de ícono menú hamburguesa */
+
+.navbar-toggler {
+    border-color: var(--grey);
+}
+
+.fa-bars {
+    color: var(--grey);
+    /* width: 50px;
+    height: 35px; */
+}
+
+
+/* Estilo header*/
+
+header h1 {
+    border-bottom: 1.5px solid var(--dark);
+}
+
+.btn-light {
+    border-color: var(--light);
+    outline-color: var(--white);
+}
+
+
+/*Estilo carousel*/
+
+#carouselSection {
+    border-bottom: 1.5px solid var(--dark);
+}
+
+.carousel-indicators {
+    top: 190px;
+}
+
+.carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--dark);
+}
+
+
+/*Estilo sección recipe*/
+
+li {
+    list-style: none;
+}
+
+.recipe {
+    border-bottom: 1.5px solid var(--dark);
+}
+
+
+/*Estilo sección relatedRecipes*/
+
+
+/*Estilo newsletter*/
+
+.newsletter {
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+span {
+    font-family: 'Lobster', cursive;
+}
+
+.btn-danger {
+    border-color: var(--grey);
+    color: var(--white);
+    padding: 5px 70px;
+}
+
+
+/*Media queries*/
+
+
+/* @media screen and (max-width:576px) {}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {} */
