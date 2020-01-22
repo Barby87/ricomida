@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ricomida</title>
 
-    <!--CDN JQuery-->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-
     <!--CSS Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 
@@ -25,27 +22,27 @@
 
 <body>
     <!--navBar-->
-    <nav class="navbar navbar-expand-lg fixed-top mb-5">
-        <div class="container">
-            <a class="icon navbar" href="#startSeccion">Ricomida</a>
+    <nav class="navbar navbar-expand-lg fixed-top mb-4 p-0">
+        <div class="container pl-3">
+            <a class="icon navbar ml-3" href="#startSeccion">Ricomida</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" ariacontrols="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarNav" ariacontrols="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span><i class="fas fa-bars "></i></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse mr-3" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#startSection">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#relatedRecipes">Recetas</a>
+                        <a class="nav-link" href="#recipeSection">Recetas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#startSection">Nosotros</a>
+                        <a class="nav-link" href="#newsletterSection">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#newsletterSection">Contacto</a>
+                        <a class="nav-link" href="#contactSection">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -54,14 +51,20 @@
 
 
     <!--header-->
-    <header id="startSection " class="container row mt-5 pt-5 m-auto">
+    <header id="startSection " class="container row mt-5 pt-5 mx-auto">
         <div class=" col ">
             <img class="img-fluid " src="assets/img/principal.jpg " alt="Icono del sitio" />
         </div>
 
         <div class="col ">
-            <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
-            <h5>110 MIN / 6 A 8 PORCIONES</h5>
+            <div class="row">
+                <div class="col pizzaChicago">
+                    <h1 class="font-weight-bold my-4">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
+                    <h5 class="font-weight-bold">110 MIN / 6 A 8 PORCIONES</h5>
+                </div>
+                <div class="col">
+                </div>
+            </div>
 
             <div>
                 <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo ">Enviar por correo</button>
@@ -71,7 +74,7 @@
     </header>
 
     <!--Carousel-->
-    <section id="carouselSection" class="container my-5 pt-32 d-none d-sm-block">
+    <section id="carouselSection" class="container my-5 pt-3 d-none d-sm-block">
         <div class="container">
             <div id="gallery" class="carousel slide mb-5 " data-ride="carousel">
 
@@ -234,7 +237,7 @@
     </section>
 
     <!--footer (pie de página)-->
-    <footer class="py-3">
+    <footer id="contactSection" class="py-3">
 
         <h3 class="icon text-center">Ricomida</h3>
 

@@ -10,7 +10,7 @@
 
 /* Tipo de fuente*/
 
-body {
+body * {
     font-family: 'Cabin', sans-serif;
     color: var(--dark);
 }
@@ -33,6 +33,11 @@ footer {
 .nav-link {
     font-family: 'Cabin', regular;
     color: var(--white);
+}
+
+footer h3 {
+    color: var(--white);
+    font-family: 'Lobster', cursive;
 }
 
 
@@ -59,7 +64,11 @@ footer {
 
 /* Estilo header*/
 
-header h1 {
+header {
+    padding-top: 2.2rem!important;
+}
+
+.pizzaChicago {
     border-bottom: 1.5px solid var(--dark);
 }
 
@@ -75,14 +84,15 @@ header h1 {
     border-bottom: 1.5px solid var(--dark);
 }
 
-.carousel-indicators {
-    top: 190px;
-}
-
 .carousel-indicators li {
+    top: 60px;
     width: 13px;
     height: 13px;
     border-radius: 50%;
+    background-color: var(--light);
+}
+
+.carousel-indicators .active {
     background-color: var(--dark);
 }
 
@@ -101,7 +111,7 @@ li {
 /*Estilo sección relatedRecipes*/
 
 
-/*Estilo newsletter*/
+/*Estilo sección newsletter*/
 
 .newsletter {
     background-color: var(--danger);
