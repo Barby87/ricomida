@@ -52,28 +52,31 @@
 
     <!--header-->
     <header id="startSection " class="container row mt-5 pt-5 mx-auto">
-        <div class=" col ">
-            <img class="img-fluid " src="assets/img/principal.jpg " alt="Icono del sitio" />
+        <div class="col">
+            <img class="img-fluid " src="assets/img/principal.jpg" alt="Icono del sitio" />
         </div>
 
-        <div class="col ">
+        <div class="col pt-3">
             <div class="row">
-                <div class="col pizzaChicago">
-                    <h1 class="font-weight-bold my-4">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
-                    <h5 class="font-weight-bold">110 MIN / 6 A 8 PORCIONES</h5>
+                <div class="col-lg-10">
+                    <!--Ajustar border-bottom de h1-->
+                    <h1 class="font-weight-bold py-4">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
+                    <h5 class="font-weight-bold py-3">110 MIN / 6 A 8 PORCIONES</h5>
                 </div>
-                <div class="col">
+
+                <div class="col-lg-2">
                 </div>
             </div>
 
-            <div>
-                <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo ">Enviar por correo</button>
+            <div class="row my-1">
+                <button type="button" class="btn btn-light mr-4" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo ">Enviar por correo</button>
                 <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos ">Añadir a favoritos</button>
             </div>
         </div>
     </header>
 
     <!--Carousel-->
+    <!--Ajustar border-bottom carousel-->
     <section id="carouselSection" class="container my-5 pt-3 d-none d-sm-block">
         <div class="container">
             <div id="gallery" class="carousel slide mb-5 " data-ride="carousel">
@@ -125,16 +128,15 @@
     </section>
 
     <!--Ingredientes y preparación-->
-    <section id="recipeSection " class="recipe container ">
-        <div class="row ">
-            <div class="col text-left ">
-                <h3>INGREDIENTES</h3>
-                <ul>
-                    <li>
-                        Masa
-                    </li>
-                </ul>
-                <ul>
+    <section id="recipeSection " class="recipe container">
+        <div class="row">
+            <div class="col text-left">
+                <div class="ingredients mb-4">
+                    <h3 class="font-weight-bold">INGREDIENTES</h3>
+                </div>
+                <ul class="pl-0">
+                    <li>Masa</li>
+                    <br>
                     <li>20 gr. de levadura seca instantánea</li>
                     <li>1 cucharadita de azúcar</li>
                     <li>500 ml agua tibia</li>
@@ -143,10 +145,11 @@
                     <li>65 gr harina de maíz fina (chuchoca)</li>
                     <li>2 cucharaditas de sal</li>
                     <li>625 gr harina</li>
-                    <li>Salsa</li>
                 </ul>
 
-                <ul>
+                <ul class="pl-0">
+                    <li>Salsa</li>
+                    <br>
                     <li>5 cucharadas de aceite de oliva</li>
                     <li>1/2 cebolla picada en cubos finos</li>
                     <li>2 cucharaditas de sal</li>
@@ -154,17 +157,20 @@
                     <li>1 1/2 cucharadas de Albahaca Gourmet</li>
                     <li>2 tarro de tomates en cubos al natural</li>
                     <li>2 cucharaditas de azúcar</li>
-                    <li>Relleno</li>
                 </ul>
 
-                <ul>
+                <ul class="pl-0">
+                    <li>Relleno</li>
+                    <br>
                     <li>1/2 cebolla, en cubos</li>
                 </ul>
             </div>
 
             <div class="col">
-                <h3>PREPARACIÓN</h3>
-                <ol>
+                <div class="preparation mb-5">
+                    <h3 class="font-weight-bold">PREPARACIÓN</h3>
+                </div>
+                <ul class="pl-0">
                     <li> Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria
                         para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado,
                         tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales. </li><br>
@@ -180,21 +186,22 @@
                         luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</li><br>
 
                     <li>Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</li>
-                </ol>
+                </ul>
             </div>
         </div>
     </section>
 
     <!--Recetas relacionadas-->
-    <section id="relatedRecipes" class="container text-center my-5">
-        <h2>RECETAS RELACIONADAS</h2>
+    <section id="relatedRecipes" class="container text-center mt-4 mb-5 pb-5">
+        <h2 class="cards font-weight-bold mb-5">RECETAS RELACIONADAS</h2>
 
         <div class="row text-left">
+            <!--Ajustar margen entre tarjetas-->
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 21rem;">
                     <img src="assets/img/recipe-card-1.png " class="card-img-top " alt="Imagen Panqueques" />
                     <div class="card-body ">
-                        <h5 class="card-title ">PANQUEQUES CON MANJAR Y CREMA</h5>
+                        <h5 class="card-title font-weight-bold">PANQUEQUES CON MANJAR Y CREMA</h5>
                         <p class="card-text ">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
                             <p>
                     </div>
@@ -202,20 +209,20 @@
             </div>
 
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card mx-0" style="width: 21rem;">
                     <img src="assets/img/recipe-card-2.png" class="card-img-top " alt="Imagen Tiramisú/">
                     <div class="card-body">
-                        <h5 class="card-title">TIRAMISÚ</h5>
+                        <h5 class="card-title font-weight-bold">TIRAMISÚ</h5>
                         <p class="card-text ">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card" style="width: 18rem; ">
+                <div class="card" style="width: 21rem;">
                     <img src="assets/img/recipe-card-3.png " class="card-img-top " alt="Imagen Plateada/">
                     <div class="card-body ">
-                        <h5 class="card-title ">PLATEADA</h5>
+                        <h5 class="card-title font-weight-bold">PLATEADA</h5>
                         <p class="card-text ">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
                     </div>
                 </div>
@@ -227,20 +234,18 @@
     <!--Newsletter-->
     <section id="newsletterSection" class="newsletter">
         <div class="container text-center py-5 ">
-            <h2>SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
-            <h3>y obtén las mejores recetas que tenemos en <span>Ricomida</span></h3>
+            <h2 class="font-weight-bold text-white">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
+            <h3 class="text-white">y obtén las mejores recetas que tenemos en <span class="text-white">Ricomida</span></h3>
         </div>
 
-        <div class="text-center py-5 ">
+        <div class="text-center pb-5 ">
             <button type="button" class="btn btn-danger">Empezar</button>
         </div>
     </section>
 
     <!--footer (pie de página)-->
     <footer id="contactSection" class="py-3">
-
         <h3 class="icon text-center">Ricomida</h3>
-
     </footer>
 
     <!--JQuery sin slim, minificado-->
